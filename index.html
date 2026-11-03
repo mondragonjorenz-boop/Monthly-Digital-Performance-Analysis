@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Monthly Digital Performance Analysis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+      /* Prevents pull-to-refresh on mobile browsers */
+      overscroll-behavior-y: none; 
+    }
+    iframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh; /* Dynamic viewport height to handle mobile address bars */
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbwqplxdMXKTFPQZybWHTAmJfUpE2HfYMUzLFVK7k8cL2vp4EjMGQz6gwa945wf2pqSpLA/exec"
+    allow="geolocation; microphone; camera"
+    allowfullscreen>
+  </iframe>
+
+</body>
+</html>
