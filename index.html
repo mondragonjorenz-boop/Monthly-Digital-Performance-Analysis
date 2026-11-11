@@ -15,12 +15,34 @@
       height: 100%;
       overflow: hidden;
       background-color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     iframe {
       width: 100%;
       height: 100%;
       border: none;
       display: block;
+    }
+    .fallback-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      border-top: 1px solid #e9ecef;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 14px;
+      color: #333333;
+      z-index: 9999;
+    }
+    .fallback-bar a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .fallback-bar a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -31,6 +53,13 @@
     allow="geolocation; microphone; camera"
     allowfullscreen="true">
   </iframe>
+
+  <div class="fallback-bar">
+    Having trouble viewing the app? 
+    <a href="https://script.google.com/macros/s/AKfycbzxScjU3cmwnYppR_Iralkm6oDHn4x47zi8NXGDPQ9xJsTSOUrd9zVxXNTKU9Nbwg_4RA/exec" target="_blank" rel="noopener noreferrer">
+      Open full screen in a new tab
+    </a>
+  </div>
 
 </body>
 </html>
